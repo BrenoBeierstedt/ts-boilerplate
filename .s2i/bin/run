@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# I strongly recommend to create a start to dev
+# and another to production
+# even if in the begging of the project both of then are the same.
+
+if [ "$NODE_ENV" == 'development' ]; then
+  npm run dev
+else
+  npm run build
+fi
